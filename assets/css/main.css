@@ -1,0 +1,35 @@
+.iphone-checkbox__input {
+  display: none;
+}
+
+.iphone-checkbox__label {
+  position: relative;
+  display: inline-block;
+  width: 140px;
+  height: 80px;
+  border-radius: 50px;
+  background-color: #dddddd;
+  transition-delay: 0.3ms;
+}
+
+.iphone-checkbox__label::after {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: #ffffff;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.iphone-checkbox__input:checked + .iphone-checkbox__label::after {
+  left: auto;
+  right: 10px;
+}
+
+.iphone-checkbox__input:checked + .iphone-checkbox__label {
+  background-color: #6ddd5d;
+
+}
